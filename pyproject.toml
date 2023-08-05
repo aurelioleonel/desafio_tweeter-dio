@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mongo-test"
+version = "1.0.0"
+description = "teste"
+authors = ["MarcosAurelio <aurelioleonel@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mongo_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tweepy = "^4.14.0"
+pymongo = "^4.4.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+flake8 = "^3.9.2"
+black = "^21.8b0"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
